@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using tpmodul5_1302210095;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -6,6 +8,9 @@
 
         HeloGeneric G = new HeloGeneric();
         G.SapaUser<string>("Raimessnyazeta");
+
+        DataGeneric<String> data = new DataGeneric<String>("1302210095");
+        data.PrintData();
     }
 
     class HeloGeneric
